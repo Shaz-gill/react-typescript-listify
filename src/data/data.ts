@@ -1,18 +1,6 @@
-export interface Todo {
-  id: number;
-  title: string;
-  description: string;
-  status: "pending" | "in-progress" | "completed";
-  dueDate: string;
-  priority: "low" | "medium" | "high";
-  category: string;
-  createdAt: string;
-  updatedAt: string;
-  isRecurring: boolean;
-  tags: string[];
-}
+import { ITodo } from "../types/Todo";
 
-const todos: Todo[] = [
+const todos: ITodo[] = [
   {
     id: 1,
     title: "Buy groceries",

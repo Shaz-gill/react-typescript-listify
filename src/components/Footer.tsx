@@ -14,7 +14,9 @@ const Footer = () => {
       py={3}
       data-testid="footer"
     >
-      <Text>&copy; {new Date().getFullYear()} @Shaz. All rights reserved.</Text>
+      <Text>
+        &copy; {new Date().getFullYear()} @ShahzadTariq. All rights reserved.
+      </Text>
     </Box>
   );
 };

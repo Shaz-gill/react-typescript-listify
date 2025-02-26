@@ -44,18 +44,16 @@ const DataTable = ({
   return (
     <TableContainer
       className="tableContainer"
-      maxHeight="550px"
+      maxHeight="100%"
       overflowY="auto"
       position="relative"
-      border="1px solid"
-      borderColor="gray.500"
       borderRadius={8}
     >
       <Table size="sm">
-        <Thead position="sticky" top={0} zIndex={1} bg="gray.700" color="white">
+        <Thead>
           <Tr>
             {headers.map(({ key, label }) => (
-              <Th key={key} scope="col">
+              <Th key={key}>
                 <HStack spacing={1} py={3}>
                   <Text>{label}</Text>
                   {sortBy === key && (
@@ -64,20 +62,14 @@ const DataTable = ({
                 </HStack>
               </Th>
             ))}
-            <Th scope="col" width="50px">
-              Actions
-            </Th>
+            <Th>Actions</Th>
           </Tr>
         </Thead>
-        <Tbody
-          className="tableBody"
-          height="calc(100% - 120px)"
-          overflowY="auto"
-        >
+        <Tbody>
           {loading ? (
             <Tr>
               <Td colSpan={headers.length + 1} textAlign="center" py={10}>
-                <Spinner size="lg" />
+                <Spinner size="xl" />
               </Td>
             </Tr>
           ) : data.length > 0 ? (
@@ -99,7 +91,7 @@ const DataTable = ({
             </Tr>
           )}
         </Tbody>
-        <Tfoot position="sticky" bottom={0} bg="gray.700" color="white">
+        <Tfoot>
           <Tr>
             <Th colSpan={headers.length + 1}>
               <HStack justify="space-between" py={1}>

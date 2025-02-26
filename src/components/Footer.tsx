@@ -8,8 +8,6 @@ const Footer = () => {
       position="fixed"
       bottom={0}
       width="100%"
-      bg="gray.700"
-      color="white"
       textAlign="center"
       py={3}
       data-testid="footer"

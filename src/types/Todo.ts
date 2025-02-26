@@ -10,4 +10,8 @@ export interface ITodo {
   updatedAt: string;
   isRecurring: boolean;
   tags: string[];
+  assignedTo?: number | null;
+  completionPercentage?: number;
+  notes?: string[];
+  attachment?: string | null;
 }

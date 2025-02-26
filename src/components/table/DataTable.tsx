@@ -4,21 +4,12 @@ import {
   TableContainer,
   Tbody,
   Td,
-  Tfoot,
-  Th,
-  Thead,
   Tr,
-  Text,
   Spinner,
-  Input,
-  Checkbox,
-  Box,
-  Button,
-  useToast,
-  ToastId,
 } from "@chakra-ui/react";
-import Pagination from "../Pagination";
 import { ITodo } from "../../types/Todo";
+import THead from "./THead";
+import TFoot from "./TFoot";
 
 interface Props {
   headers: { key: keyof ITodo; label: string }[];
@@ -27,8 +18,8 @@ interface Props {
   currentPage: number;
   totalPages: number;
   totalRecords: number;
-  sortBy: string;
   sortOrder: "ASC" | "DESC";
+  sortBy: string;
 }
 
 const DataTable = ({
@@ -50,21 +41,7 @@ const DataTable = ({
       borderRadius={8}
     >
       <Table size="sm">
-        <Thead>
-          <Tr>
-            {headers.map(({ key, label }) => (
-              <Th key={key}>
-                <HStack spacing={1} py={3}>
-                  <Text>{label}</Text>
-                  {sortBy === key && (
-                    <Text>{sortOrder === "ASC" ? " ▲" : " ▼"}</Text>
-                  )}
-                </HStack>
-              </Th>
-            ))}
-            <Th>Actions</Th>
-          </Tr>
-        </Thead>
+        <THead headers={headers} sortOrder={sortOrder} sortBy={sortBy} />
         <Tbody>
           {loading ? (
             <Tr>
@@ -91,16 +68,11 @@ const DataTable = ({
             </Tr>
           )}
         </Tbody>
-        <Tfoot>
-          <Tr>
-            <Th colSpan={headers.length + 1}>
-              <HStack justify="space-between" py={1}>
-                <Text>Total Records: {totalRecords}</Text>
-                <Pagination currentPage={currentPage} totalPages={totalPages} />
-              </HStack>
-            </Th>
-          </Tr>
-        </Tfoot>
+        <TFoot
+          totalRecords={totalRecords}
+          currentPage={currentPage}
+          totalPages={totalPages}
+        />
       </Table>
     </TableContainer>
   );

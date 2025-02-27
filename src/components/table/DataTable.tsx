@@ -6,6 +6,7 @@ import {
   Td,
   Tr,
   Spinner,
+  Checkbox,
 } from "@chakra-ui/react";
 import { ITodo } from "../../types/Todo";
 import THead from "./THead";
@@ -52,6 +53,9 @@ const DataTable = ({
           ) : data.length > 0 ? (
             data.map((item) => (
               <Tr key={item.id}>
+                <Td>
+                  <Checkbox />
+                </Td>
                 {headers.map(({ key }) => (
                   <Td key={key}>{item[key]}</Td>
                 ))}

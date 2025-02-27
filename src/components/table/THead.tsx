@@ -1,4 +1,4 @@
-import { Thead, Tr, Th, HStack, Text } from "@chakra-ui/react";
+import { Thead, Tr, Th, HStack, Text, Checkbox } from "@chakra-ui/react";
 import { ITodo } from "../../types/Todo";
 
 interface Props {
@@ -11,6 +11,9 @@ const THead = ({ headers, sortOrder, sortBy }: Props) => {
   return (
     <Thead>
       <Tr>
+        <Th>
+          <Checkbox />
+        </Th>
         {headers.map(({ key, label }) => (
           <Th key={key}>
             <HStack spacing={1} py={4}>

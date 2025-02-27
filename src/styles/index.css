@@ -1,11 +1,4 @@
-:root {
-}
-
 .container {
   margin: 2.6em;
   padding-bottom: 1.25rem;
-}
-
-.paginatonBtn {
-  background: var(--border-color) !important;
 }

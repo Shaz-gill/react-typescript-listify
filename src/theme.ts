@@ -20,6 +20,30 @@ const theme = extendTheme({
       900: "#111111",
     },
   },
+  components: {
+    Footer: {
+      baseStyle: {
+        position: "fixed",
+        bottom: 0,
+        width: "100%",
+        textAlign: "center",
+        py: 3,
+      },
+      variants: {
+        dark: {
+          bg: "gray.700",
+          color: "white",
+        },
+        light: {
+          bg: "gray.100",
+          color: "black",
+        },
+      },
+      defaultProps: {
+        variant: "dark", // Set the default variant to dark mode
+      },
+    },
+  },
 });
 
 export default theme;

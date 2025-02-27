@@ -1,7 +1,9 @@
-import React from "react";
 import { Box, Text } from "@chakra-ui/react";
+import { useThemeStyles } from "../hooks/useThemeStyles";
 
 const Footer = () => {
+  const footerStyle = useThemeStyles();
+
   return (
     <Box
       as="footer"
@@ -10,7 +12,7 @@ const Footer = () => {
       width="100%"
       textAlign="center"
       py={3}
-      data-testid="footer"
+      {...footerStyle}
     >
       <Text>
         &copy; {new Date().getFullYear()} @ShahzadTariq. All rights reserved.

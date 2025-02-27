@@ -12,7 +12,7 @@ const TFoot = ({ totalRecords, currentPage, totalPages }: Props) => {
   return (
     <Tfoot>
       <Tr>
-        <Th colSpan={headers.length + 1}>
+        <Th colSpan={headers.length + 2}>
           <HStack justify="space-between" py={2}>
             <Text>Total Records: {totalRecords}</Text>
             <Pagination currentPage={currentPage} totalPages={totalPages} />

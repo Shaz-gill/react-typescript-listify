@@ -24,6 +24,7 @@ interface Props {
   totalRecords: number;
   sortOrder: "ASC" | "DESC";
   sortBy: string;
+  onPageChange: (page: number) => void;
 }
 
 const DataTable = ({
@@ -35,6 +36,7 @@ const DataTable = ({
   totalRecords,
   sortBy,
   sortOrder,
+  onPageChange,
 }: Props) => {
   return (
     <TableContainer
@@ -88,6 +90,7 @@ const DataTable = ({
           totalRecords={totalRecords}
           currentPage={currentPage}
           totalPages={totalPages}
+          onPageChange={onPageChange}
         />
       </Table>
     </TableContainer>

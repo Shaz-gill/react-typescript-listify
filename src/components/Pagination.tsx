@@ -4,24 +4,16 @@ import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 interface Props {
   currentPage: number;
   totalPages: number;
-  onPageChange?: (page: number) => void;
+  onPageChange: (page: number) => void;
 }
 
 const Pagination = ({ currentPage, totalPages, onPageChange }: Props) => {
-  const handlePrevious = () => {
-    if (currentPage > 1 && onPageChange) onPageChange(currentPage - 1);
-  };
-
-  const handleNext = () => {
-    if (currentPage < totalPages && onPageChange) onPageChange(currentPage + 1);
-  };
-
   return (
     <HStack spacing={4}>
       <IconButton
         aria-label="Previous Page"
         icon={<FaChevronLeft />}
-        onClick={handlePrevious}
+        onClick={() => onPageChange(currentPage - 1)}
         disabled={currentPage === 1}
         size="sm"
       />
@@ -31,7 +23,7 @@ const Pagination = ({ currentPage, totalPages, onPageChange }: Props) => {
       <IconButton
         aria-label="Next Page"
         icon={<FaChevronRight />}
-        onClick={handleNext}
+        onClick={() => onPageChange(currentPage + 1)}
         disabled={currentPage === totalPages}
         size="sm"
       />

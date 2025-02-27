@@ -1,5 +1,5 @@
 type ITodoLabel = {
-  title_description: string;
+  title_description?: string;
 };
 
 export type ITodo = {

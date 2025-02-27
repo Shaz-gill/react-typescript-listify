@@ -2,7 +2,7 @@ import { ITodo } from "../types/Todo";
 
 const todos: ITodo[] = [
   {
-    id: 16,
+    id: 1,
     title: "Clean the kitchen",
     description: "Wipe counters, clean the stove, and mop the floor",
     status: "pending",
@@ -19,7 +19,7 @@ const todos: ITodo[] = [
     attachment: null,
   },
   {
-    id: 17,
+    id: 2,
     title: "Check email",
     description: "Review important emails and respond to them",
     status: "in-progress",
@@ -36,7 +36,7 @@ const todos: ITodo[] = [
     attachment: null,
   },
   {
-    id: 18,
+    id: 3,
     title: "Attend yoga class",
     description: "Join the weekly yoga session at the community center",
     status: "pending",
@@ -53,7 +53,7 @@ const todos: ITodo[] = [
     attachment: null,
   },
   {
-    id: 19,
+    id: 4,
     title: "Fix the leaky faucet",
     description: "Repair the kitchen sink faucet that is leaking",
     status: "in-progress",
@@ -70,7 +70,7 @@ const todos: ITodo[] = [
     attachment: null,
   },
   {
-    id: 20,
+    id: 5,
     title: "Buy new shoes",
     description: "Purchase a new pair of running shoes for exercise",
     status: "pending",
@@ -87,7 +87,7 @@ const todos: ITodo[] = [
     attachment: null,
   },
   {
-    id: 21,
+    id: 6,
     title: "Complete Python tutorial",
     description: "Finish the free online Python tutorial for beginners",
     status: "in-progress",
@@ -104,7 +104,7 @@ const todos: ITodo[] = [
     attachment: null,
   },
   {
-    id: 22,
+    id: 7,
     title: "Visit the dentist",
     description: "Annual checkup and cleaning at the dentist’s office",
     status: "pending",
@@ -121,7 +121,7 @@ const todos: ITodo[] = [
     attachment: null,
   },
   {
-    id: 23,
+    id: 8,
     title: "Prepare project presentation",
     description:
       "Design and prepare the PowerPoint for the upcoming project meeting",
@@ -139,7 +139,7 @@ const todos: ITodo[] = [
     attachment: null,
   },
   {
-    id: 24,
+    id: 9,
     title: "Buy birthday gift",
     description: "Get a birthday gift for best friend",
     status: "pending",
@@ -156,7 +156,7 @@ const todos: ITodo[] = [
     attachment: null,
   },
   {
-    id: 25,
+    id: 10,
     title: "Study for final exams",
     description: "Review all subjects for the final exam",
     status: "pending",
@@ -173,7 +173,7 @@ const todos: ITodo[] = [
     attachment: null,
   },
   {
-    id: 26,
+    id: 11,
     title: "Buy concert tickets",
     description: "Purchase tickets for the upcoming concert",
     status: "pending",
@@ -190,7 +190,7 @@ const todos: ITodo[] = [
     attachment: null,
   },
   {
-    id: 27,
+    id: 12,
     title: "Buy laptop stand",
     description: "Get a portable laptop stand for working from home",
     status: "completed",
@@ -207,7 +207,7 @@ const todos: ITodo[] = [
     attachment: null,
   },
   {
-    id: 28,
+    id: 13,
     title: "Schedule car maintenance",
     description: "Book an appointment for oil change and tire check",
     status: "pending",
@@ -224,7 +224,7 @@ const todos: ITodo[] = [
     attachment: null,
   },
   {
-    id: 29,
+    id: 14,
     title: "Write blog post on TypeScript",
     description: "Draft and publish an article about advanced TypeScript tips",
     status: "in-progress",
@@ -241,7 +241,7 @@ const todos: ITodo[] = [
     attachment: null,
   },
   {
-    id: 30,
+    id: 15,
     title: "Read 'Atomic Habits'",
     description: "Finish reading 'Atomic Habits' by James Clear",
     status: "pending",
@@ -258,7 +258,7 @@ const todos: ITodo[] = [
     attachment: null,
   },
   {
-    id: 31,
+    id: 16,
     title: "Update LinkedIn profile",
     description: "Revise work experience and add new certifications",
     status: "pending",
@@ -275,7 +275,7 @@ const todos: ITodo[] = [
     attachment: null,
   },
   {
-    id: 32,
+    id: 17,
     title: "Grocery shopping",
     description: "Buy vegetables, dairy, and snacks for the week",
     status: "completed",
@@ -292,7 +292,7 @@ const todos: ITodo[] = [
     attachment: null,
   },
   {
-    id: 33,
+    id: 18,
     title: "Plan weekend trip",
     description: "Decide on a destination and book a hotel",
     status: "pending",
@@ -309,7 +309,7 @@ const todos: ITodo[] = [
     attachment: null,
   },
   {
-    id: 34,
+    id: 19,
     title: "Enroll in an online course",
     description: "Sign up for a full-stack development course",
     status: "pending",
@@ -326,7 +326,7 @@ const todos: ITodo[] = [
     attachment: null,
   },
   {
-    id: 35,
+    id: 20,
     title: "Workout session",
     description: "Do 30 minutes of cardio and strength training",
     status: "in-progress",
@@ -343,7 +343,7 @@ const todos: ITodo[] = [
     attachment: null,
   },
   {
-    id: 36,
+    id: 21,
     title: "Fix website bugs",
     description: "Resolve layout issues on the home page",
     status: "in-progress",
@@ -360,7 +360,7 @@ const todos: ITodo[] = [
     attachment: "screenshot_issue.jpg",
   },
   {
-    id: 37,
+    id: 22,
     title: "File tax return",
     description: "Gather documents and file annual tax return",
     status: "pending",
@@ -377,7 +377,7 @@ const todos: ITodo[] = [
     attachment: "tax_documents.pdf",
   },
   {
-    id: 38,
+    id: 23,
     title: "Meal prep for the week",
     description: "Cook and store meals for the week ahead",
     status: "pending",
@@ -394,7 +394,7 @@ const todos: ITodo[] = [
     attachment: null,
   },
   {
-    id: 39,
+    id: 24,
     title: "Organize closet",
     description: "Sort and donate old clothes",
     status: "pending",
@@ -411,7 +411,7 @@ const todos: ITodo[] = [
     attachment: null,
   },
   {
-    id: 40,
+    id: 25,
     title: "Pay utility bills",
     description: "Settle electricity and water bills",
     status: "pending",
@@ -428,7 +428,7 @@ const todos: ITodo[] = [
     attachment: null,
   },
   {
-    id: 41,
+    id: 26,
     title: "Complete Python basics course",
     description: "Finish the online Python beginner course on Udemy",
     status: "in-progress",
@@ -445,7 +445,7 @@ const todos: ITodo[] = [
     attachment: null,
   },
   {
-    id: 42,
+    id: 27,
     title: "Build a small project in JavaScript",
     description: "Create a to-do list app using vanilla JavaScript",
     status: "pending",
@@ -462,7 +462,7 @@ const todos: ITodo[] = [
     attachment: null,
   },
   {
-    id: 43,
+    id: 28,
     title: "Learn TypeScript fundamentals",
     description: "Go through TypeScript documentation and practice examples",
     status: "in-progress",
@@ -479,7 +479,7 @@ const todos: ITodo[] = [
     attachment: null,
   },
   {
-    id: 44,
+    id: 29,
     title: "Practice SQL queries",
     description: "Solve 20 SQL problems on LeetCode",
     status: "pending",
@@ -496,7 +496,7 @@ const todos: ITodo[] = [
     attachment: null,
   },
   {
-    id: 45,
+    id: 30,
     title: "Build a REST API in Node.js",
     description: "Create a simple CRUD API using Express and MongoDB",
     status: "pending",
@@ -513,7 +513,7 @@ const todos: ITodo[] = [
     attachment: null,
   },
   {
-    id: 46,
+    id: 31,
     title: "Explore Rust programming language",
     description: "Go through Rust book and write small programs",
     status: "pending",
@@ -530,7 +530,7 @@ const todos: ITodo[] = [
     attachment: null,
   },
   {
-    id: 47,
+    id: 32,
     title: "Learn Go concurrency",
     description: "Study goroutines and channels in Golang",
     status: "pending",
@@ -547,7 +547,7 @@ const todos: ITodo[] = [
     attachment: null,
   },
   {
-    id: 48,
+    id: 33,
     title: "Create a React.js portfolio website",
     description: "Develop a personal portfolio using React and Tailwind CSS",
     status: "in-progress",
@@ -564,7 +564,7 @@ const todos: ITodo[] = [
     attachment: null,
   },
   {
-    id: 49,
+    id: 34,
     title: "Learn Django framework",
     description: "Build a small blog app using Django and SQLite",
     status: "pending",
@@ -581,7 +581,7 @@ const todos: ITodo[] = [
     attachment: null,
   },
   {
-    id: 50,
+    id: 35,
     title: "Solve 5 algorithm problems in C++",
     description: "Practice data structures and algorithms using C++",
     status: "pending",

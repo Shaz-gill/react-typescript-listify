@@ -8,7 +8,7 @@ import { ITodo } from "../types/Todo";
 const TodoList = () => {
   const [data, setData] = useState<ITodo[]>([]);
   const [loading, setLoading] = useState(false);
-  const [totalRecords, setTotalRecords] = useState(0);
+  const [totalRecords, setTotalRecords] = useState(20);
   const [currentPage, setCurrentPage] = useState(1);
   const [itemsPerPage] = useState(5);
   const [sortBy, setSortBy] = useState<string>("");

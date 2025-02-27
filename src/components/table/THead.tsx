@@ -1,4 +1,5 @@
 import { Thead, Tr, Th, HStack, Text, Checkbox } from "@chakra-ui/react";
+import { useBgColor } from "../../hooks/useThemeStyles";
 import { ITodo } from "../../types/Todo";
 
 interface Props {
@@ -9,14 +10,14 @@ interface Props {
 
 const THead = ({ headers, sortOrder, sortBy }: Props) => {
   return (
-    <Thead>
+    <Thead position="sticky" top={0} zIndex={1} {...useBgColor()}>
       <Tr>
         <Th>
           <Checkbox />
         </Th>
         {headers.map(({ key, label }) => (
           <Th key={key}>
-            <HStack spacing={1} py={4}>
+            <HStack py={2}>
               <Text>{label}</Text>
               {sortBy === key && (
                 <Text>{sortOrder === "ASC" ? " ▲" : " ▼"}</Text>

@@ -7,10 +7,13 @@ import {
   Tr,
   Spinner,
   Checkbox,
+  VStack,
+  Text,
 } from "@chakra-ui/react";
 import { ITodo } from "../../types/Todo";
 import THead from "./THead";
 import TFoot from "./TFoot";
+import { useTableContainer } from "../../hooks/useThemeStyles";
 
 interface Props {
   headers: { key: keyof ITodo; label: string }[];
@@ -35,15 +38,14 @@ const DataTable = ({
 }: Props) => {
   return (
     <TableContainer
-      className="tableContainer"
-      maxHeight="100%"
+      maxHeight={{ base: "50vh", md: "60vh", lg: "70vh" }}
       overflowY="auto"
       position="relative"
-      borderRadius={8}
+      {...useTableContainer()}
     >
       <Table size="sm">
         <THead headers={headers} sortOrder={sortOrder} sortBy={sortBy} />
-        <Tbody>
+        <Tbody height="calc(100% - 120px)" overflowY="auto">
           {loading ? (
             <Tr>
               <Td colSpan={headers.length + 1} textAlign="center" py={10}>
@@ -57,8 +59,18 @@ const DataTable = ({
                   <Checkbox />
                 </Td>
                 {headers.map(({ key }) => (
-                  <Td key={key}>{item[key]}</Td>
+                  <Td key={key}>
+                    {key === "title_description" ? (
+                      <VStack align="start">
+                        <Text>{item.title}</Text>
+                        <Text>{item.description}</Text>
+                      </VStack>
+                    ) : (
+                      <Text>{item[key]}</Text>
+                    )}
+                  </Td>
                 ))}
+
                 <Td>
                   <HStack></HStack>
                 </Td>

@@ -1,4 +1,8 @@
-export interface ITodo {
+type ITodoLabel = {
+  title_description: string;
+};
+
+export type ITodo = {
   id: number;
   title: string;
   description: string;
@@ -14,4 +18,4 @@ export interface ITodo {
   completionPercentage?: number;
   notes?: string[];
   attachment?: string | null;
-}
+} & ITodoLabel;

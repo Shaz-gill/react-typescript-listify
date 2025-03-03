@@ -4,7 +4,7 @@ import ColorModeSwitch from "./ColorModeSwitch";
 
 const Header = () => {
   return (
-    <HStack justifyContent="space-between" px={10} py={4} {...useBgColor()}>
+    <HStack justifyContent="space-between" px={7} py={3} {...useBgColor()}>
       <Image {...useLogo()} width={180} />
       <ColorModeSwitch />
     </HStack>

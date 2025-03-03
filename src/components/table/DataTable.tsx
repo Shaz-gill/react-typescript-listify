@@ -1,19 +1,20 @@
 import {
+  Checkbox,
   HStack,
+  Spinner,
   Table,
   TableContainer,
   Tbody,
   Td,
-  Tr,
-  Spinner,
-  Checkbox,
-  VStack,
   Text,
+  Tr,
+  VStack,
 } from "@chakra-ui/react";
-import { ITodo } from "../../types/Todo";
-import THead from "./THead";
-import TFoot from "./TFoot";
 import { useTableContainer } from "../../hooks/useThemeStyles";
+import { ITodo } from "../../types/Todo";
+import TodoDetail from "../TodoDetail";
+import TFoot from "./TFoot";
+import THead from "./THead";
 
 interface Props {
   headers: { key: keyof ITodo; label: string }[];
@@ -50,7 +51,7 @@ const DataTable = ({
         <Tbody height="calc(100% - 120px)" overflowY="auto">
           {loading ? (
             <Tr>
-              <Td colSpan={headers.length + 1} textAlign="center" py={10}>
+              <Td colSpan={headers.length + 2} textAlign="center" py={10}>
                 <Spinner size="xl" />
               </Td>
             </Tr>
@@ -72,15 +73,16 @@ const DataTable = ({
                     )}
                   </Td>
                 ))}
-
                 <Td>
-                  <HStack></HStack>
+                  <HStack>
+                    <TodoDetail />
+                  </HStack>
                 </Td>
               </Tr>
             ))
           ) : (
             <Tr>
-              <Td colSpan={headers.length + 1} textAlign="center" py={10}>
+              <Td colSpan={headers.length + 2} textAlign="center" py={10}>
                 No records found
               </Td>
             </Tr>

@@ -13,7 +13,7 @@ const Footer = () => {
       {...useBgColor()}
     >
       <Text>
-        &copy; {new Date().getFullYear()} @ShahzadTariq. All rights reserved.
+        &copy; {new Date().getFullYear()} Shahzad Tariq. All rights reserved.
       </Text>
     </Box>
   );

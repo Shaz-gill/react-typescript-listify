@@ -1,4 +1,4 @@
-import { Tfoot, Tr, Th, HStack, Text } from "@chakra-ui/react";
+import { HStack, Text, Tfoot, Th, Tr } from "@chakra-ui/react";
 import { useBgColor } from "../../hooks/useThemeStyles";
 import { headers } from "../../utils/todoUtils";
 import Pagination from "../Pagination";

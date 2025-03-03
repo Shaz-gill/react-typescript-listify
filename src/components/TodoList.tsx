@@ -1,10 +1,9 @@
-import { useState, useEffect } from "react";
 import { Box } from "@chakra-ui/react";
-
-import DataTable from "./table/DataTable";
-import { headers } from "../utils/todoUtils";
+import { useEffect, useState } from "react";
 import todos from "../data/data";
 import { ITodo } from "../types/Todo";
+import { headers } from "../utils/todoUtils";
+import DataTable from "./table/DataTable";
 
 const TodoList = () => {
   const [data, setData] = useState<ITodo[]>([]);

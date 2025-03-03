@@ -1,5 +1,5 @@
 import { HStack, Image } from "@chakra-ui/react";
-import { useLogo, useBgColor } from "../hooks/useThemeStyles";
+import { useBgColor, useLogo } from "../hooks/useThemeStyles";
 import ColorModeSwitch from "./ColorModeSwitch";
 
 const Header = () => {

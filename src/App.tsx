@@ -1,6 +1,6 @@
 import { Grid, GridItem } from "@chakra-ui/react";
-import NavBar from "./components/Header";
 import Footer from "./components/Footer";
+import NavBar from "./components/Header";
 import TodoList from "./components/TodoList";
 
 function App() {

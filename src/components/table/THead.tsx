@@ -1,4 +1,4 @@
-import { Thead, Tr, Th, HStack, Text, Checkbox } from "@chakra-ui/react";
+import { Checkbox, HStack, Text, Th, Thead, Tr } from "@chakra-ui/react";
 import { useBgColor } from "../../hooks/useThemeStyles";
 import { ITodo } from "../../types/Todo";
 

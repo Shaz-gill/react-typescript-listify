@@ -7,11 +7,11 @@ export type ITask = {
   title: string;
   description: string;
   status: "pending" | "in-progress" | "completed";
-  dueDate: string;
+  dueDate: Date;
   priority: "low" | "medium" | "high";
   category: string;
-  createdAt: string;
-  updatedAt: string;
+  createdAt: Date;
+  updatedAt: Date;
   isRecurring: boolean;
   tags: string[];
   assignedTo?: number | null;

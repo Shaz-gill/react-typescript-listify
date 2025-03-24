@@ -12,7 +12,7 @@ import {
 } from "@chakra-ui/react";
 import { useTableContainer } from "../../hooks/useThemeStyles";
 import { ITask } from "../../types/Task";
-//import TaskDetail from "../TaskDetail";
+import TaskDetail from "../TaskDetail";
 import TFoot from "./TFoot";
 import THead from "./THead";
 
@@ -69,12 +69,18 @@ const DataTable = ({
                         <Text>{item.description}</Text>
                       </VStack>
                     ) : (
-                      <Text>{item[key]}</Text>
+                      <Text>
+                        {item[key] instanceof Date
+                          ? (item[key] as Date).toLocaleDateString()
+                          : item[key]}
+                      </Text>
                     )}
                   </Td>
                 ))}
                 <Td>
-                  <HStack>{/* <TaskDetail /> */}</HStack>
+                  <HStack>
+                    <TaskDetail task={item} />
+                  </HStack>
                 </Td>
               </Tr>
             ))

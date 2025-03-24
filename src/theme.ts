@@ -40,7 +40,7 @@ const theme = extendTheme({
         },
       },
       defaultProps: {
-        variant: "dark", // Set the default variant to dark mode
+        variant: "dark",
       },
     },
   },

@@ -1,6 +1,6 @@
-import { ITodo } from "../types/Todo";
+import { ITask } from "../types/Task";
 
-const todos: ITodo[] = [
+const tasks: ITask[] = [
   {
     id: 1,
     title: "Clean the kitchen",
@@ -599,4 +599,4 @@ const todos: ITodo[] = [
   },
 ];
 
-export default todos;
+export default tasks;

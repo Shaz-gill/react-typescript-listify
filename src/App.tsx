@@ -1,7 +1,7 @@
 import { Grid, GridItem } from "@chakra-ui/react";
 import Footer from "./components/Footer";
 import NavBar from "./components/Header";
-import TodoList from "./components/TodoList";
+import TaskList from "./components/TaskList";
 
 function App() {
   return (
@@ -17,7 +17,7 @@ function App() {
         <NavBar />
       </GridItem>
       <GridItem area="main">
-        <TodoList />
+        <TaskList />
       </GridItem>
       <GridItem area="footer">
         <Footer />

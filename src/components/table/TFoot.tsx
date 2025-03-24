@@ -1,6 +1,6 @@
 import { HStack, Text, Tfoot, Th, Tr } from "@chakra-ui/react";
 import { useBgColor } from "../../hooks/useThemeStyles";
-import { headers } from "../../utils/todoUtils";
+import { headers } from "../../utils/taskUtils";
 import Pagination from "../Pagination";
 
 interface Props {

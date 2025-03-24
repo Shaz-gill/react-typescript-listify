@@ -1,9 +1,9 @@
 import { Checkbox, HStack, Text, Th, Thead, Tr } from "@chakra-ui/react";
 import { useBgColor } from "../../hooks/useThemeStyles";
-import { ITodo } from "../../types/Todo";
+import { ITask } from "../../types/Task";
 
 interface Props {
-  headers: { key: keyof ITodo; label: string }[];
+  headers: { key: keyof ITask; label: string }[];
   sortOrder: "ASC" | "DESC";
   sortBy: string;
 }

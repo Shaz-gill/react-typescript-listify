@@ -1,12 +1,12 @@
 import { Box } from "@chakra-ui/react";
 import { useEffect, useState } from "react";
-import todos from "../data/data";
-import { ITodo } from "../types/Todo";
-import { headers } from "../utils/todoUtils";
+import tasks from "../data/data";
+import { ITask } from "../types/Task";
+import { headers } from "../utils/taskUtils";
 import DataTable from "./table/DataTable";
 
-const TodoList = () => {
-  const [data, setData] = useState<ITodo[]>([]);
+const TaskList = () => {
+  const [data, setData] = useState<ITask[]>([]);
   const [loading, setLoading] = useState<boolean>(false);
   const [currentPage, setCurrentPage] = useState<number>(1);
   const [itemsPerPage] = useState<number>(15);
@@ -16,7 +16,7 @@ const TodoList = () => {
   const fetchData = () => {
     setLoading(true);
     setTimeout(() => {
-      setData(todos);
+      setData(tasks);
       setLoading(false);
     }, 500);
   };
@@ -55,4 +55,4 @@ const TodoList = () => {
   );
 };
 
-export default TodoList;
+export default TaskList;

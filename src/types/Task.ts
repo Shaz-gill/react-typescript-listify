@@ -1,8 +1,8 @@
-type ITodoLabel = {
+type ITaskLabel = {
   title_description?: string;
 };
 
-export type ITodo = {
+export type ITask = {
   id: number;
   title: string;
   description: string;
@@ -18,4 +18,4 @@ export type ITodo = {
   completionPercentage?: number;
   notes?: string[];
   attachment?: string | null;
-} & ITodoLabel;
+} & ITaskLabel;

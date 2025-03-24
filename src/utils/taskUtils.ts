@@ -1,7 +1,7 @@
-import { ITodo } from "../types/Todo";
+import { ITask } from "../types/Task";
 
 export const headers: {
-  key: keyof ITodo;
+  key: keyof ITask;
   label: string;
 }[] = [
   { key: "title_description", label: "Title / Description" },

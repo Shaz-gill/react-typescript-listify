@@ -11,14 +11,14 @@ import {
   VStack,
 } from "@chakra-ui/react";
 import { useTableContainer } from "../../hooks/useThemeStyles";
-import { ITodo } from "../../types/Todo";
-import TodoDetail from "../TodoDetail";
+import { ITask } from "../../types/Task";
+//import TaskDetail from "../TaskDetail";
 import TFoot from "./TFoot";
 import THead from "./THead";
 
 interface Props {
-  headers: { key: keyof ITodo; label: string }[];
-  data: ITodo[];
+  headers: { key: keyof ITask; label: string }[];
+  data: ITask[];
   loading: boolean;
   currentPage: number;
   totalPages: number;
@@ -74,9 +74,7 @@ const DataTable = ({
                   </Td>
                 ))}
                 <Td>
-                  <HStack>
-                    <TodoDetail />
-                  </HStack>
+                  <HStack>{/* <TaskDetail /> */}</HStack>
                 </Td>
               </Tr>
             ))
